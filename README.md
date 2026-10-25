@@ -17,6 +17,18 @@ A machine learning tool in Python that **detects phishing links** and **flags ma
 
 **Attachment checks** include executable and script types, double extensions (`invoice.pdf.exe`), hidden right-to-left override characters, macro-enabled Office files, embedded VBA macros, content that does not match its extension (magic bytes), and PDFs with JavaScript or Launch actions.
 
+## Demo
+
+*API documentation (FastAPI / Swagger)*
+
+![API docs](demo-api-docs.png)
+
+*Scanning a phishing-style URL*
+
+![Phishing result](demo-phishing.png)
+
+*Scanning a legitimate URL* returns {"url": "https://www.wikipedia.org", "phishing_probability": 0, "verdict": "safe", "reasons": []}
+
 ## Architecture
 
 ```mermaid
